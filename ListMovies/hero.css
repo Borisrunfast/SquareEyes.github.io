@@ -30,7 +30,7 @@
     gap: .2rem;
 }
 
-.desktop-4k {
+.desktop-4k h2{
     grid-area: res;
     text-align: right;
 }

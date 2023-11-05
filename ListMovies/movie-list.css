@@ -5,17 +5,16 @@
 
 .scroll-display {
     width: 100%;
-    height: max-content;
-    max-height: 400px;
+    height: fit-content;
     padding: 1rem;
     overflow-x: scroll;
-
+    overflow-y: hidden;
 }
 
 .scroll {
     width: fit-content;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -42,4 +41,14 @@
     font-size: .8rem;
     text-overflow: ellipsis;
     text-wrap: nowrap;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .scroll {
+        flex-wrap: nowrap;
+    }
+    .scroll-display {
+        max-height: 400px;
+    }
 }
