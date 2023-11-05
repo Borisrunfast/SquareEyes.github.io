@@ -19,6 +19,7 @@
 .scroll div {
     width: 26vw;
     max-width: 200px;
+    min-width: 170px;
     border-radius: 3px;
     background-color: black;
     box-shadow: 1px 1px 10px #000000;
