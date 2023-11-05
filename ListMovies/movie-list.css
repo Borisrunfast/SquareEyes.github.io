@@ -7,8 +7,7 @@
     width: 100%;
     height: fit-content;
     padding: 1rem;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    
 }
 
 .scroll {
@@ -50,5 +49,7 @@
     }
     .scroll-display {
         max-height: 400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
     }
 }
