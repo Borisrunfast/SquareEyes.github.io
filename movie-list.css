@@ -1,24 +1,24 @@
 .top-movie-list {
     width: 90%;
-    height: max-content;
-    max-height: 400px;
+    height: fit-content;
     margin: 0 auto;
     margin-top: 1rem;
-    overflow-x: scroll;
+    overflow-x: hidden;
 
 }
 
 .scroll {
     width: fit-content;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     padding: 1rem;
 }
 
 .scroll div {
     width: 26vw;
-    max-width: 230px;
+    max-width: 200px;
     border-radius: 3px;
     background-color: black;
     box-shadow: 1px 1px 10px #000000;
@@ -26,7 +26,8 @@
 }
 
 .scroll div img {
-    width: 100%;
+    height: 16vw;
+    min-height: 250px;
 }
 
 .scroll div h5 {
@@ -34,3 +35,11 @@
     font-size: 1rem;
 }
 
+@media only screen and (max-width: 1000px) { 
+    .top-movie-list {
+        overflow-x: scroll;
+    }
+    .scroll { 
+        flex-wrap: nowrap;
+    }
+}
